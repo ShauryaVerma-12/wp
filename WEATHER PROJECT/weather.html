@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheather App</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="container">
+      
+        <form onsubmit="getData(event)" class="searchData">
+        <input type="search" placeholder="search city here" id="inputBox"><button>Search</button>
+    </form>
+    
+        <div class="main">
+            <h1>Your Location</h1>
+        </div>
+        <section class="cityWheatherData"></section>
+        <section class="countrydetail">
+        <div class="card">
+         
+            <p>CountryName</p>
+            <p id="country">_____________</p>
+        </div>
+        <div class="card">
+            
+            <p>StateName</p>
+            <p id="statename">________</p>
+        </div>
+        <div class="card">
+           
+            <p>CityName</p>
+            <p id="cityname">__________</p>
+        </div>
+        </section>
+            <div class="wheaterdetails">
+                <div class="card1">
+                 
+                    <p>Humanidity</p>
+                    <p id="humanidity">___________</p>
+                </div>
+                <div class="card2">
+                  
+                    <p>Windspeed</p>
+                    <p id="wind">_________KMPH</p>
+                </div>
+                <div class="card3">
+                
+                    <p>Tempreture</p>
+                    <p id="tempreture">______________</p>
+                </div>
+                 <div class="card4"> 
+                 
+                    <img src="" alt="" width="50px" id="logoimg">
+                    <p id="wheatherstatus">_________</p>
+                </div>
+            </div>
+    </div>
+    <script src="./wheather.js"></script>
+</body>
+</html>
